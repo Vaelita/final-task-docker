@@ -20,10 +20,6 @@ app.get('/', (req, res) => {
     res.send('Yay from express');
 });
 
-// app.get('/chat', (req, res) => {
-//     res.send('This is chat page!');
-// });
-
 mongoose.connect(
     process.env.MONGOOSE_CONNECTION_URL, 
     {useNewUrlParser: true, useUnifiedTopology: true}, 
