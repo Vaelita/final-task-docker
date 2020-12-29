@@ -15,7 +15,7 @@ router.get('/', async (req, res) => {
 
 router.post('/', async (req, res) => {
     const messageText = new MessageChat({
-        name: req.body.name,
+        username: req.body.username,
         text: req.body.text,
     });
 
